@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+
+            <nav>
+                <img class="close" src="https://freesvg.org/img/close-button.png" alt="">
+
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sneacker</a></li>
+                    <li><a href="">Players</a></li>
+                </ul>
+
+
+            </nav>
+             <!-- svg -->
+             <img class="menu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="">
+
+        </header>
+
+        <section class="hero">
+            <h1>Regain your confidence on the court</h1>
+
+            <p class="subhead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consectetur?</p>
+                </div>
+                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="shoe">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consectetur?</p>
+                </div>
+                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="shoe">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consectetur?</p>
+                </div>
+                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="shoe">
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+
+    </script>
+</body>
+</html>
